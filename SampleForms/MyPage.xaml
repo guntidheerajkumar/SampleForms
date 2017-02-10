@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		     x:Class="SampleForms.MyPage">
+  <AbsoluteLayout>
+	<ContentView x:Name="actIndBackground" 
+				 BackgroundColor="#222222" 
+				 Opacity="0.5" 
+				 AbsoluteLayout.LayoutFlags="All" 
+				 AbsoluteLayout.LayoutBounds="0,0,1,1" 
+				 IsVisible="{Binding IsLoading}">
+	</ContentView>
+	<ActivityIndicator x:Name="actInd" 
+					   AbsoluteLayout.LayoutFlags="PositionProportional" 
+					   AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" 
+					   IsRunning="{Binding IsLoading}" 
+					   IsVisible="{Binding IsLoading}" />
+	<Switch x:Name="switchbtn" Toggled="Handle_Toggled" />
+  </AbsoluteLayout>
+</ContentPage>

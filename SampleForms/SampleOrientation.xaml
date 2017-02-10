@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="SampleForms.SampleOrientation"
+			 SizeChanged="Handle_SizeChanged">
+	<Grid x:Name="mainGrid">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="0" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<ListView x:Name="listView">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<TextCell Text="{Binding FirstName}">
+					</TextCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+		<StackLayout x:Name="detailLayout" Grid.Row="1" Grid.Column="0" BindingContext="{Binding Source={x:Reference listView},Path=SelectedItem}">
+			<StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+				<StackLayout.Resources>
+					<ResourceDictionary>
+						<Style TargetType="Label">
+							<Setter Property="FontSize" Value="Large" />
+							<Setter Property="FontAttributes" Value="Bold" />
+						</Style>
+					</ResourceDictionary>
+				</StackLayout.Resources>
+				<Label Text="{Binding LastName} " />
+				<Label Text="{Binding FirstName} " />
+				<Label Text="{Binding MiddleName} " />
+			</StackLayout>
+			<Label Text="{Binding Sex}" HorizontalOptions="Center" />
+		</StackLayout>
+	</Grid>
+</ContentPage>

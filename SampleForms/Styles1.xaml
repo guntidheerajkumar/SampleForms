@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SampleForms.Styles1">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style x:Key="ABC" TargetType="Entry">
+				<Setter Property="HorizontalOptions" Value="Center" />
+				<Setter Property="VerticalOptions" Value="CenterAndExpand" />
+				<Setter Property="BackgroundColor" Value="Yellow" />
+				<Setter Property="FontAttributes" Value="Italic" />
+				<Setter Property="TextColor" Value="Blue" />
+			</Style>
+			<Style x:Key="ABCD" TargetType="Button">
+				<Setter Property="HorizontalOptions" Value="Center" />
+				<Setter Property="VerticalOptions" Value="CenterAndExpand" />
+				<Setter Property="BackgroundColor" Value="Yellow" />
+				<Setter Property="FontAttributes" Value="Italic" />
+				<Setter Property="TextColor" Value="Blue" />
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<StackLayout Padding="0,20,0,0">
+			<Entry Text="These entries" />
+			<Button Text="Sample Button" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{37D11AA7-8F71-48DE-AC06-136B9DFA9AD2}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SampleForms" expanded="True">
+            <Node name="SampleForms" expanded="True" selected="True">
+              <Node name="MyPageModel.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SampleForms.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C46FE99E-05CC-4FAB-A6E7-38F2F4D3A288" />
+  <MonoDevelop.Ide.ItemProperties.SampleForms.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+</Properties>

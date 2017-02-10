@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:SampleForms"
+		x:Class="SampleForms.SampleFormsPage">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness" iOS="20,20,20,20"/>
+	</ContentPage.Padding>
+	<!--<Label VerticalOptions="CenterAndExpand">
+	 <Label.FormattedText>
+		 <FormattedString>
+			 <Span Text="A single line with " />
+			 <Span Text="bold" FontAttributes="Bold" />
+			 <Span Text=" and " />
+			 <Span Text="italic" FontAttributes="Italic" />
+			 <Span Text=" and " />
+			 <Span Text="large" FontSize="Large" />
+			 <Span Text=" text." />
+		 </FormattedString>
+	 </Label.FormattedText>
+	 </Label> -->
+	<!-- <BoxView WidthRequest="100"
+		 HeightRequest="100"
+		 HorizontalOptions="Center"
+		 VerticalOptions="CenterAndExpand">
+		 <BoxView.Color>
+			 <Color>
+				 <x:Arguments>
+					 <x:Double>0</x:Double>
+					 <x:Double>0</x:Double>
+					 <x:Double>1</x:Double>
+					 <x:Double>0.5</x:Double>
+				 </x:Arguments>
+			 </Color>
+		 </BoxView.Color>
+ 	</BoxView>-->
+<!--	<StackLayout Padding="20">
+ <StackLayout VerticalOptions="CenterAndExpand">
+ <Label Text="Device Model:" />
+ <ContentView Padding="50, 0, 0, 0">
+ <Label x:Name="modelLabel"
+ FontSize="Large"
+ FontAttributes="Bold" />
+ </ContentView>
+ </StackLayout>
+ <StackLayout VerticalOptions="CenterAndExpand">
+ <Label Text="Operating System Version:" />
+ <ContentView Padding="50, 0, 0, 0">
+ <Label x:Name="versionLabel"
+ FontSize="Large"
+ FontAttributes="Bold" />
+ </ContentView>
+ </StackLayout>
+ </StackLayout>-->
+	<!--<Label x:Name="deviceLabel"
+ HorizontalOptions="Center"
+ VerticalOptions="Center">
+ <OnPlatform x:TypeArguments="x:String"
+ iOS="This is an iOS device"
+ Android="This is an Android device"
+ WinPhone="This is a Windows device" />
+ </Label>-->
+	<!--<ScrollView>
+	 <StackLayout Padding="6, 0">
+		 <local:ColorView ColorName="Aqua" />
+		 <local:ColorView ColorName="Black" />
+		 <local:ColorView ColorName="Blue" />
+		 <local:ColorView ColorName="Fuchsia" />
+		 <local:ColorView ColorName="Gray" />
+		 <local:ColorView ColorName="Green" />
+		 <local:ColorView ColorName="Lime" />
+		 <local:ColorView ColorName="Maroon" />
+		 <local:ColorView ColorName="Navy" />
+		 <local:ColorView ColorName="Olive" />
+		 <local:ColorView ColorName="Purple" />
+		 <local:ColorView ColorName="Pink" />
+		 <local:ColorView ColorName="Red" />
+		 <local:ColorView ColorName="Silver" />
+		 <local:ColorView ColorName="Teal" />
+		 <local:ColorView ColorName="White" />
+		 <local:ColorView ColorName="Yellow" />
+	 </StackLayout>
+ </ScrollView>-->
+	<!--<BoxView x:Name="box" BackgroundColor="Blue" HorizontalOptions="FillAndExpand"/>-->
+	<Switch x:Name="switchbtn" Toggled="Handle_Toggled" />
+</ContentPage>

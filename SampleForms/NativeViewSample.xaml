@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+  			 xmlns:ios="clr-namespace:UIKit;assembly=Xamarin.iOS;targetPlatform=iOS"
+  			 x:Class="SampleForms.NativeViewSample">
+	<ContentPage.Content>
+		<StackLayout Padding="20" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+			<ios:UITextField x:Name="sampleText" Text="Hello World" TextColor="{x:Static ios:UIColor.Red}" View.HorizontalOptions="Start" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
