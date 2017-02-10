@@ -11,6 +11,7 @@ namespace SampleForms
 		public PersonListPage()
 		{
 			InitializeComponent();
+			this.Title = "Family List";
 
 			var toolbarItem = new ToolbarItem {
 				Text = "+"
