@@ -144,6 +144,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="FileHelper.cs" />
+    <Compile Include="CustomTableViewRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\default-placeholder.png" />
